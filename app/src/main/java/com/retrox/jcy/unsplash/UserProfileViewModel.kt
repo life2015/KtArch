@@ -24,3 +24,5 @@ class UserProfileViewModel(val userRepo: UserRepository) : ViewModel() {
 data class User(@PrimaryKey var id: Int, var name: String, var lastName: String) {
     constructor() : this(0,"","")
 }
+
+data class Case(var name: String = "")
